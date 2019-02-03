@@ -59,9 +59,10 @@ def work():
         d["Designation"] = designation
         d["Email"] = emailid
         d["Phone"] = phone
-        time.sleep(0.5)
         data.append(d)
-        sys.stdout.write(end)
+        time.sleep(0.5)
+        
+sys.stdout.write(end)
 
 tlist = []
 print(yellow,"[*] Working with {} threads".format(sys.argv[1]),end)
